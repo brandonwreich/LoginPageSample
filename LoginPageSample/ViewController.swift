@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UINavigationController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.performSegue(withIdentifier: "loginView", sender: self)
+       // self.performSegue(withIdentifier: "loginView", sender: self)
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-//    func viewDidAppear(animated: Bool)
-//    {
-//        self.performSegue(withIdentifier: "loginView", sender: self)
-//    }
+    override public func viewDidAppear(_ animated: Bool)
+    {
+        self.performSegue(withIdentifier: "loginView", sender: self)
+    }
     
     
 }
