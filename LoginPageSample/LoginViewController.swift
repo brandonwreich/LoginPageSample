@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct KeychainConfiguration
+{
+    static let serviceName = "TouchMeIn"
+    static let accessGroup: String? = nil
+}
 class LoginViewController: UIViewController
 {
     @IBOutlet weak var userEmailTextField: UITextField!
@@ -25,6 +30,15 @@ class LoginViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    @IBAction func resetButtonPushed(_ sender: Any)
+    {
+        let defaults = UserDefaults.standard
+        
+        defaults.removeObject(forKey: "userEmail")
+        defaults.removeObject(forKey: "userPassword")
+    }
+    
     
     @IBAction func loginButtonPushed(_ sender: Any)
     {
@@ -42,7 +56,22 @@ class LoginViewController: UIViewController
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
                 self.dismiss(animated: true, completion: nil)
+                self.performSegue(withIdentifier: "pageView", sender: self)
             }
+            else
+            {
+                let myAlert = UIAlertController(title: "Oops", message: "Incorrect email and/or password", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.default)
+                
+                myAlert.addAction(okAction)
+            }
+        }
+        else
+        {
+            let myAlert = UIAlertController(title: "Oops", message: "Incorrect email and/or password", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.default)
+            
+            myAlert.addAction(okAction)
         }
     }
 }
