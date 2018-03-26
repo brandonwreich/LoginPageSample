@@ -8,11 +8,6 @@
 
 import UIKit
 
-struct KeychainConfiguration
-{
-    static let serviceName = "TouchMeIn"
-    static let accessGroup: String? = nil
-}
 class LoginViewController: UIViewController
 {
     @IBOutlet weak var userEmailTextField: UITextField!

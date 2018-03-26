@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03C307C1202C956900166170 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C307C0202C956900166170 /* RegisterPageViewController.swift */; };
 		03C307C6202CB43300166170 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C307C5202CB43300166170 /* LoginViewController.swift */; };
+		03D8A7E120694B9B004BEDA6 /* LoginPageSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8A7E020694B9B004BEDA6 /* LoginPageSampleTests.swift */; };
+		03D8A7E920694BC7004BEDA6 /* TestLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8A7E820694BC7004BEDA6 /* TestLoginPage.swift */; };
 		03DED075202B4C000037AAFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DED074202B4C000037AAFF /* AppDelegate.swift */; };
 		03DED077202B4C000037AAFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DED076202B4C000037AAFF /* ViewController.swift */; };
 		03DED07A202B4C000037AAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DED078202B4C000037AAFF /* Main.storyboard */; };
@@ -16,9 +18,23 @@
 		03DED07F202B4C000037AAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DED07D202B4C000037AAFF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		03D8A7E320694B9B004BEDA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DED069202B4C000037AAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DED070202B4C000037AAFF;
+			remoteInfo = LoginPageSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		03C307C0202C956900166170 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		03C307C5202CB43300166170 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03D8A7DE20694B9B004BEDA6 /* LoginPageSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginPageSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D8A7E020694B9B004BEDA6 /* LoginPageSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageSampleTests.swift; sourceTree = "<group>"; };
+		03D8A7E220694B9B004BEDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D8A7E820694BC7004BEDA6 /* TestLoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoginPage.swift; sourceTree = "<group>"; };
 		03DED071202B4C000037AAFF /* LoginPageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DED074202B4C000037AAFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DED076202B4C000037AAFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03D8A7DB20694B9B004BEDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DED06E202B4C000037AAFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D8A7DF20694B9B004BEDA6 /* LoginPageSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				03D8A7E020694B9B004BEDA6 /* LoginPageSampleTests.swift */,
+				03D8A7E220694B9B004BEDA6 /* Info.plist */,
+				03D8A7E820694BC7004BEDA6 /* TestLoginPage.swift */,
+			);
+			path = LoginPageSampleTests;
+			sourceTree = "<group>";
+		};
 		03DED068202B4C000037AAFF = {
 			isa = PBXGroup;
 			children = (
 				03DED073202B4C000037AAFF /* LoginPageSample */,
+				03D8A7DF20694B9B004BEDA6 /* LoginPageSampleTests */,
 				03DED072202B4C000037AAFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				03DED071202B4C000037AAFF /* LoginPageSample.app */,
+				03D8A7DE20694B9B004BEDA6 /* LoginPageSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +108,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03D8A7DD20694B9B004BEDA6 /* LoginPageSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D8A7E720694B9B004BEDA6 /* Build configuration list for PBXNativeTarget "LoginPageSampleTests" */;
+			buildPhases = (
+				03D8A7DA20694B9B004BEDA6 /* Sources */,
+				03D8A7DB20694B9B004BEDA6 /* Frameworks */,
+				03D8A7DC20694B9B004BEDA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03D8A7E420694B9B004BEDA6 /* PBXTargetDependency */,
+			);
+			name = LoginPageSampleTests;
+			productName = LoginPageSampleTests;
+			productReference = 03D8A7DE20694B9B004BEDA6 /* LoginPageSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		03DED070202B4C000037AAFF /* LoginPageSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03DED083202B4C000037AAFF /* Build configuration list for PBXNativeTarget "LoginPageSample" */;
@@ -100,6 +153,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CTEC;
 				TargetAttributes = {
+					03D8A7DD20694B9B004BEDA6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03DED070202B4C000037AAFF;
+					};
 					03DED070202B4C000037AAFF = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -120,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				03DED070202B4C000037AAFF /* LoginPageSample */,
+				03D8A7DD20694B9B004BEDA6 /* LoginPageSampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03D8A7DC20694B9B004BEDA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DED06F202B4C000037AAFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +204,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03D8A7DA20694B9B004BEDA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D8A7E920694BC7004BEDA6 /* TestLoginPage.swift in Sources */,
+				03D8A7E120694B9B004BEDA6 /* LoginPageSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DED06D202B4C000037AAFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +225,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03D8A7E420694B9B004BEDA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DED070202B4C000037AAFF /* LoginPageSample */;
+			targetProxy = 03D8A7E320694B9B004BEDA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03DED078202B4C000037AAFF /* Main.storyboard */ = {
@@ -171,6 +254,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		03D8A7E520694B9B004BEDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginPageSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CTEC.LoginPageSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginPageSample.app/LoginPageSample";
+			};
+			name = Debug;
+		};
+		03D8A7E620694B9B004BEDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginPageSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CTEC.LoginPageSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginPageSample.app/LoginPageSample";
+			};
+			name = Release;
+		};
 		03DED081202B4C000037AAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +422,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03D8A7E720694B9B004BEDA6 /* Build configuration list for PBXNativeTarget "LoginPageSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D8A7E520694B9B004BEDA6 /* Debug */,
+				03D8A7E620694B9B004BEDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03DED06C202B4C000037AAFF /* Build configuration list for PBXProject "LoginPageSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
